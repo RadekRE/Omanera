@@ -13,7 +13,7 @@ function useStored<T>(key: string, init: T) {
   return [v, setV] as const;
 }
 
-export default function ChatPanel({ locale, projects, projectSlug }: { locale: string; projects: ChatProject[]; projectSlug?: string }) {
+export default function ChatPanel({ locale, projects, projectSlug, initialQuestion }: { locale: string; projects: ChatProject[]; projectSlug?: string; initialQuestion?: string }) {
   const t = useTranslations("chat");
   const [msgs, setMsgs] = useStored<Msg[]>("chat.msgs", []);
   const [sid] = useStored<string>("chat.sid", typeof crypto !== "undefined" ? crypto.randomUUID() : "session-" + Math.random().toString(36).slice(2));
@@ -41,6 +41,10 @@ export default function ChatPanel({ locale, projects, projectSlug }: { locale: s
     setBusy(false);
   }
 
+  const started = useRef(false);
+  useEffect(() => { if (initialQuestion && !started.current) { started.current = true; const id = setTimeout(() => send(initialQuestion), 120); return () => clearTimeout(id); } // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   async function wipe() {
     await fetch("/api/chat/delete", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ sessionId: sid }) }).catch(() => null);
     setMsgs([{ role: "assistant", content: t("deleted") }]);
@@ -62,6 +66,7 @@ export default function ChatPanel({ locale, projects, projectSlug }: { locale: s
     <div className="chat">
       <div className="notice"><span className="tag">{t("ai")}</span>{t("aiNotice")}</div>
       <div className="log" ref={log} aria-live="polite">
+        {msgs.length === 0 && <div className="msg assistant"><span className="tag">{t("ai")}</span>{t("welcome")}</div>}
         {msgs.map((m, i) => (<div key={i} className={`msg ${m.role}`}>{m.role === "assistant" && <span className="tag">{t("ai")}</span>}{render(m.content)}</div>))}
       </div>
       {msgs.length === 0 && (<div className="chips">{(t.raw("chips") as string[]).map((c) => <button key={c} onClick={() => send(c)}>{c}</button>)}

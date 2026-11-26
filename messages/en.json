@@ -49,7 +49,45 @@
       "Tax, legal and financing decisions belong to your independent adviser."
     ],
     "featured": "Selected projects",
-    "all": "All projects"
+    "all": "All projects",
+    "prompt": {
+      "placeholder": "Ask something like: how much is an apartment in Muscat?",
+      "send": "Ask",
+      "label": "Ask the AI assistant",
+      "chips": [
+        "How much does an apartment in Oman cost?",
+        "What is off-plan?",
+        "How do I calculate rental yield?"
+      ]
+    },
+    "stats": [
+      {
+        "n": 0,
+        "suffix": "",
+        "l": "promises of return. A yield is always a developer estimate."
+      },
+      {
+        "n": 100,
+        "suffix": " %",
+        "l": "of numbers carry a source or an “estimate” label."
+      },
+      {
+        "n": 4,
+        "suffix": "",
+        "l": "languages: Czech, German, English, Polish."
+      }
+    ],
+    "yield": {
+      "eyebrow": "Yield",
+      "title": "Where the gap comes from",
+      "gross": "Gross estimate",
+      "fees": "Management and fees",
+      "vacancy": "Periods without a tenant",
+      "tax": "Taxes",
+      "net": "What remains",
+      "caption": "Illustrative diagram. Not data from any project."
+    },
+    "ticker": "Muscat · Salalah · Duqm"
   },
   "project": {
     "from": "from",
@@ -87,7 +125,8 @@
     "consent": "I agree to this conversation being stored to improve the service and answer enquiries (optional).",
     "delete": "Delete my conversation",
     "deleted": "The conversation has been deleted.",
-    "close": "Close"
+    "close": "Close",
+    "welcome": "Hello. I answer general questions about Oman and our projects. I give numbers with a source and yields only as developer estimates."
   },
   "disclaimer": "Prices and yields are indicative. Yields are developer estimates only and not a guarantee. This is not investment, tax or legal advice.",
   "footer": {
@@ -139,6 +178,15 @@
         "h": "Your rights",
         "p": "You may request access, correction, erasure or portability and withdraw consent. Delete a stored conversation with the button in the chat; exercise other rights by email."
       }
+    ]
+  },
+  "chatpage": {
+    "topicsTitle": "What you can ask about",
+    "topics": [
+      "Prices and locations",
+      "How buying works, and off-plan",
+      "Yield and how it is estimated",
+      "Rules for foreigners (in general)"
     ]
   }
 }

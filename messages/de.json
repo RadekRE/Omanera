@@ -49,7 +49,45 @@
       "Über Steuern, Recht und Finanzierung entscheidet Ihr unabhängiger Berater."
     ],
     "featured": "Ausgewählte Projekte",
-    "all": "Alle Projekte"
+    "all": "Alle Projekte",
+    "prompt": {
+      "placeholder": "Fragen Sie zum Beispiel: Was kostet eine Wohnung in Maskat?",
+      "send": "Fragen",
+      "label": "Fragen Sie den KI-Assistenten",
+      "chips": [
+        "Was kostet eine Wohnung im Oman?",
+        "Was ist Off-Plan?",
+        "Wie rechnet man die Mietrendite?"
+      ]
+    },
+    "stats": [
+      {
+        "n": 0,
+        "suffix": "",
+        "l": "Renditeversprechen. Rendite ist immer eine Schätzung des Bauträgers."
+      },
+      {
+        "n": 100,
+        "suffix": " %",
+        "l": "der Zahlen mit Quelle oder dem Etikett „Schätzung“."
+      },
+      {
+        "n": 4,
+        "suffix": "",
+        "l": "Sprachen: Tschechisch, Deutsch, Englisch, Polnisch."
+      }
+    ],
+    "yield": {
+      "eyebrow": "Rendite",
+      "title": "Woher der Unterschied kommt",
+      "gross": "Bruttoschätzung",
+      "fees": "Verwaltung und Gebühren",
+      "vacancy": "Zeiten ohne Mieter",
+      "tax": "Steuern",
+      "net": "Was bleibt",
+      "caption": "Schematische Darstellung. Keine Daten eines Projekts."
+    },
+    "ticker": "Maskat · Salalah · Duqm"
   },
   "project": {
     "from": "ab",
@@ -87,7 +125,8 @@
     "consent": "Ich willige in die Speicherung dieses Gesprächs zur Verbesserung des Dienstes und zur Beantwortung von Anfragen ein (optional).",
     "delete": "Mein Gespräch löschen",
     "deleted": "Das Gespräch wurde gelöscht.",
-    "close": "Schließen"
+    "close": "Schließen",
+    "welcome": "Guten Tag. Ich beantworte allgemeine Fragen zum Oman und zu unseren Projekten. Zahlen nenne ich mit Quelle, Renditen nur als Schätzung des Bauträgers."
   },
   "disclaimer": "Preise und Renditen sind unverbindlich. Renditen sind lediglich Schätzungen des Bauträgers und keine Garantie. Keine Anlage-, Steuer- oder Rechtsberatung.",
   "footer": {
@@ -139,6 +178,15 @@
         "h": "Ihre Rechte",
         "p": "Sie können Auskunft, Berichtigung, Löschung oder Übertragung verlangen und Einwilligungen widerrufen. Ein gespeichertes Gespräch löschen Sie per Schaltfläche im Chat, weitere Rechte per E-Mail."
       }
+    ]
+  },
+  "chatpage": {
+    "topicsTitle": "Wonach Sie fragen können",
+    "topics": [
+      "Preise und Standorte",
+      "Ablauf des Kaufs und Off-Plan",
+      "Rendite und ihre Schätzung",
+      "Regeln für Ausländer (allgemein)"
     ]
   }
 }

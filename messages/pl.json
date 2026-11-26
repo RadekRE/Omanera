@@ -49,7 +49,45 @@
       "O podatkach, prawie i finansowaniu decyduje Twój niezależny doradca."
     ],
     "featured": "Wybrane projekty",
-    "all": "Wszystkie projekty"
+    "all": "Wszystkie projekty",
+    "prompt": {
+      "placeholder": "Zapytaj na przykład: ile kosztuje mieszkanie w Maskacie?",
+      "send": "Zapytaj",
+      "label": "Zapytaj asystenta AI",
+      "chips": [
+        "Ile kosztuje mieszkanie w Omanie?",
+        "Co to jest off-plan?",
+        "Jak liczyć zysk z najmu?"
+      ]
+    },
+    "stats": [
+      {
+        "n": 0,
+        "suffix": "",
+        "l": "obietnic zysku. Zysk to zawsze szacunek dewelopera."
+      },
+      {
+        "n": 100,
+        "suffix": " %",
+        "l": "liczb ma źródło lub etykietę „szacunek“."
+      },
+      {
+        "n": 4,
+        "suffix": "",
+        "l": "języki: czeski, niemiecki, angielski, polski."
+      }
+    ],
+    "yield": {
+      "eyebrow": "Zysk",
+      "title": "Skąd bierze się różnica",
+      "gross": "Szacunek brutto",
+      "fees": "Zarządzanie i opłaty",
+      "vacancy": "Okresy bez najemcy",
+      "tax": "Podatki",
+      "net": "Co zostaje",
+      "caption": "Schemat poglądowy. To nie są dane żadnego projektu."
+    },
+    "ticker": "Maskat · Salalah · Duqm"
   },
   "project": {
     "from": "od",
@@ -87,7 +125,8 @@
     "consent": "Zgadzam się na zapisanie tej rozmowy w celu ulepszania usługi i odpowiadania na zapytania (opcjonalnie).",
     "delete": "Usuń moją rozmowę",
     "deleted": "Rozmowa została usunięta.",
-    "close": "Zamknij"
+    "close": "Zamknij",
+    "welcome": "Dzień dobry. Odpowiadam na ogólne pytania o Oman i nasze projekty. Liczby podaję ze źródłem, a zyski wyłącznie jako szacunki dewelopera."
   },
   "disclaimer": "Ceny i zyski mają charakter orientacyjny. Zyski to wyłącznie szacunki dewelopera, a nie gwarancja. To nie jest porada inwestycyjna, podatkowa ani prawna.",
   "footer": {
@@ -139,6 +178,15 @@
         "h": "Twoje prawa",
         "p": "Możesz żądać dostępu, sprostowania, usunięcia lub przeniesienia danych oraz wycofać zgodę. Zapisaną rozmowę usuniesz przyciskiem w czacie, pozostałe prawa wykonasz e-mailem."
       }
+    ]
+  },
+  "chatpage": {
+    "topicsTitle": "O co możesz zapytać",
+    "topics": [
+      "Ceny i lokalizacje",
+      "Przebieg zakupu i off-plan",
+      "Zysk i jego szacowanie",
+      "Zasady dla cudzoziemców (ogólnie)"
     ]
   }
 }

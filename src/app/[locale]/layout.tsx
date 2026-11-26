@@ -9,6 +9,7 @@ import { getProjects } from "@/lib/projects";
 import ChatWidget from "@/components/ChatWidget";
 import SiteNav from "@/components/SiteNav";
 import PrivacyBanner from "@/components/PrivacyBanner";
+import ScrollProgress from "@/components/ScrollProgress";
 import "@fontsource-variable/fraunces";
 import "@fontsource-variable/inter";
 import "../tokens.css";
@@ -37,12 +38,13 @@ export default async function LocaleLayout({ children, params }: { children: Rea
     <html lang={locale}>
       <body>
         <NextIntlClientProvider>
+          <ScrollProgress />
           <header className="site"><div className="container">
             <Link href="/" className="logo">{brand.name}</Link>
             <SiteNav />
           </div></header>
           <main className="container">{children}</main>
-          <footer className="site"><div className="container"><p className="logo">{brand.name}</p>
+          <footer className="site"><div className="container"><p className="wordmark" aria-hidden="true">{brand.name}</p>
             <p>{tf("disclaimer")}</p>
             <p><Link href="/privacy">{tf("footer.privacy")}</Link></p>
             <p>{tf("footer.legal")}: {brand.legal.companyName}, {brand.legal.registration}, {brand.legal.address}, {brand.legal.email}</p>

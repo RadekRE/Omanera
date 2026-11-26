@@ -8,7 +8,7 @@
   },
   "home": {
     "eyebrow": "Nemovitosti v Ománu pro evropské kupce",
-    "title": "Byt v Ománu. S čísly, bez slibů.",
+    "title": "Byt v Ománu. S čísly, bez slibů.",
     "lead": "Ceny, lokality, postup koupě. U každého čísla uvádíme, odkud je, a odhady nazýváme odhady.",
     "cta": "Zeptat se AI asistenta",
     "browse": "Projekty a ceny",
@@ -49,7 +49,45 @@
       "O daních, právu a financování rozhoduje váš nezávislý poradce."
     ],
     "featured": "Vybrané projekty",
-    "all": "Všechny projekty"
+    "all": "Všechny projekty",
+    "prompt": {
+      "placeholder": "Zeptejte se třeba: kolik stojí byt v Muscatu?",
+      "send": "Zeptat se",
+      "label": "Zeptejte se AI asistenta",
+      "chips": [
+        "Kolik stojí byt v Ománu?",
+        "Co je off-plan?",
+        "Jak počítat výnos z pronájmu?"
+      ]
+    },
+    "stats": [
+      {
+        "n": 0,
+        "suffix": "",
+        "l": "slibů výnosu. Výnos je vždy odhad developera."
+      },
+      {
+        "n": 100,
+        "suffix": " %",
+        "l": "čísel se zdrojem nebo štítkem „odhad“."
+      },
+      {
+        "n": 4,
+        "suffix": "",
+        "l": "jazyky: čeština, němčina, angličtina, polština."
+      }
+    ],
+    "yield": {
+      "eyebrow": "Výnos",
+      "title": "Odkud se bere rozdíl",
+      "gross": "Hrubý odhad",
+      "fees": "Správa a poplatky",
+      "vacancy": "Období bez nájemce",
+      "tax": "Daně",
+      "net": "Co zbývá",
+      "caption": "Ilustrativní schéma. Nejde o data žádného projektu."
+    },
+    "ticker": "Muscat · Salalah · Duqm"
   },
   "project": {
     "from": "od",
@@ -87,7 +125,8 @@
     "consent": "Souhlasím s uložením této konverzace za účelem zlepšení služby a odpovědí na poptávky (nepovinné).",
     "delete": "Smazat moji konverzaci",
     "deleted": "Konverzace byla smazána.",
-    "close": "Zavřít"
+    "close": "Zavřít",
+    "welcome": "Dobrý den. Odpovím na obecné otázky o Ománu a našich projektech. Čísla uvádím se zdrojem, výnosy jen jako odhad developera."
   },
   "disclaimer": "Ceny a výnosy jsou orientační. Výnosy jsou pouze odhad developera, nejsou zárukou. Nejde o investiční, daňové ani právní poradenství.",
   "footer": {
@@ -139,6 +178,15 @@
         "h": "Vaše práva",
         "p": "Můžete žádat o přístup, opravu, výmaz či přenesení údajů a odvolat souhlas. Uloženou konverzaci smažete tlačítkem v chatu, ostatní práva uplatníte e-mailem."
       }
+    ]
+  },
+  "chatpage": {
+    "topicsTitle": "Na co se můžete zeptat",
+    "topics": [
+      "Ceny a lokality",
+      "Postup koupě a off-plan",
+      "Výnos a jeho odhad",
+      "Pravidla pro cizince (obecně)"
     ]
   }
 }
