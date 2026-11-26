@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "projects": "Projects",
+    "blog": "Blog",
+    "locations": "Locations",
+    "about": "About",
+    "chat": "Chat"
+  },
+  "home": {
+    "title": "Oman property, made clear",
+    "lead": "Information about Oman and selected projects. Ask the AI assistant or browse the listings.",
+    "reasons": "Why Oman",
+    "r1": "A stable country with a long-term vision (Vision 2040)",
+    "r2": "Projects that may qualify for residency",
+    "r3": "Direct flights from Europe",
+    "cta": "Ask the AI assistant",
+    "browse": "Browse projects"
+  },
+  "project": {
+    "from": "from",
+    "stage": {
+      "planned": "Planned",
+      "under_construction": "Under construction",
+      "completed": "Completed"
+    },
+    "completion": "Completion",
+    "developer": "Developer",
+    "units": "Units",
+    "area": "Area",
+    "available": "Available",
+    "estimate": "Developer estimate",
+    "askAi": "Ask the AI about this project",
+    "inquiry": "Send an enquiry",
+    "all": "All projects",
+    "location": "Location"
+  },
+  "chat": {
+    "title": "AI assistant",
+    "aiNotice": "I am an AI assistant, not a human. I only provide information about Oman and the projects and do not give investment, tax or legal advice. Yield figures are developer estimates, not a guarantee.",
+    "placeholder": "Type your question…",
+    "send": "Send",
+    "human": "I'd like to talk to a person",
+    "unavailable": "Chat is temporarily unavailable. Please use the contact form.",
+    "ai": "AI",
+    "chips": [
+      "How does buying in Oman work?",
+      "Muscat vs Salalah",
+      "What projects do you have?"
+    ],
+    "open": "Open chat"
+  },
+  "disclaimer": "Prices and yields are indicative. Yields are developer estimates only and not a guarantee. This is not investment, tax or legal advice.",
+  "footer": {
+    "legal": "Operator"
+  },
+  "blog": {
+    "title": "Blog",
+    "read": "Read more"
+  }
+}

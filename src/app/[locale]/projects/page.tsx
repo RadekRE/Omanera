@@ -1,0 +1,23 @@
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
+import { getProjects, minPrice } from "@/lib/projects";
+import ProjectCard from "@/components/ProjectCard";
+type L = "cs" | "de" | "en" | "pl";
+export default async function Projects({ params, searchParams }: { params: Promise<{ locale: L }>; searchParams: Promise<{ location?: string; type?: string; sort?: string }> }) {
+  const { locale } = await params; setRequestLocale(locale);
+  const sp = await searchParams; const t = await getTranslations("nav"); const tp = await getTranslations("project");
+  const all = getProjects();
+  let list = all.filter((p) => (!sp.location || p.location === sp.location) && (!sp.type || p.type === sp.type));
+  if (sp.sort === "price") list = [...list].sort((a, b) => minPrice(a) - minPrice(b));
+  const locs = [...new Set(all.map((p) => p.location))]; const types = [...new Set(all.map((p) => p.type))];
+  return (<>
+    <h1>{t("projects")}</h1>
+    <div className="filters">
+      <Link className="btn alt" href="/projects">{tp("all")}</Link>
+      {locs.map((l) => <Link key={l} className="btn alt" href={{ pathname: "/projects", query: { location: l } }}>{l}</Link>)}
+      {types.map((x) => <Link key={x} className="btn alt" href={{ pathname: "/projects", query: { type: x } }}>{x}</Link>)}
+      <Link className="btn alt" href={{ pathname: "/projects", query: { ...sp, sort: "price" } }}>€↑</Link>
+    </div>
+    <div className="grid">{await Promise.all(list.map((p) => <ProjectCard key={p.slug} p={p} locale={locale} />))}</div>
+  </>);
+}

@@ -1,0 +1,75 @@
+{
+  "slug": "marina-heights",
+  "status": "published",
+  "fictional": true,
+  "developer": {
+    "name": "Ukázkový developer (fiktivní)"
+  },
+  "location": "muscat",
+  "coordinates": {
+    "lat": 23.6,
+    "lng": 58.5
+  },
+  "type": "apartment",
+  "stage": "under_construction",
+  "completion": "2028-Q2",
+  "currency": "OMR",
+  "units": [
+    {
+      "name": "1+kk",
+      "area_m2": 55,
+      "price_from": 62000,
+      "available": 10
+    },
+    {
+      "name": "2+kk",
+      "area_m2": 85,
+      "price_from": 94000,
+      "available": 12
+    }
+  ],
+  "estimate": {
+    "rental_yield_pct": 6.5,
+    "source": "developer",
+    "as_of": "2026-11-01"
+  },
+  "images": [],
+  "i18n": {
+    "cs": {
+      "title": "Marina Heights",
+      "summary": "Apartmány u mariny v Muscatu.",
+      "description": "Apartmány u mariny v Muscatu. (UKÁZKOVÁ DATA – fiktivní projekt.)",
+      "highlights": [
+        "Ukázkový bod 1",
+        "Ukázkový bod 2"
+      ]
+    },
+    "de": {
+      "title": "Marina Heights",
+      "summary": "Apartments an der Marina in Maskat.",
+      "description": "Apartments an der Marina in Maskat. (UKÁZKOVÁ DATA – fiktivní projekt.)",
+      "highlights": [
+        "Ukázkový bod 1",
+        "Ukázkový bod 2"
+      ]
+    },
+    "en": {
+      "title": "Marina Heights",
+      "summary": "Marina-side apartments in Muscat.",
+      "description": "Marina-side apartments in Muscat. (UKÁZKOVÁ DATA – fiktivní projekt.)",
+      "highlights": [
+        "Ukázkový bod 1",
+        "Ukázkový bod 2"
+      ]
+    },
+    "pl": {
+      "title": "Marina Heights",
+      "summary": "Apartamenty przy marinie w Maskacie.",
+      "description": "Apartamenty przy marinie w Maskacie. (UKÁZKOVÁ DATA – fiktivní projekt.)",
+      "highlights": [
+        "Ukázkový bod 1",
+        "Ukázkový bod 2"
+      ]
+    }
+  }
+}

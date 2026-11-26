@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "projects": "Projekte",
+    "blog": "Blog",
+    "locations": "Standorte",
+    "about": "Über uns",
+    "chat": "Chat"
+  },
+  "home": {
+    "title": "Immobilien im Oman, verständlich",
+    "lead": "Informationen zum Oman und zu ausgewählten Projekten. Fragen Sie den KI-Assistenten oder stöbern Sie im Angebot.",
+    "reasons": "Warum Oman",
+    "r1": "Stabiles Land mit langfristiger Vision (Vision 2040)",
+    "r2": "Projekte mit möglicher Aufenthaltserlaubnis",
+    "r3": "Direktflüge aus Europa",
+    "cta": "KI-Assistenten fragen",
+    "browse": "Projekte ansehen"
+  },
+  "project": {
+    "from": "ab",
+    "stage": {
+      "planned": "In Planung",
+      "under_construction": "Im Bau",
+      "completed": "Fertiggestellt"
+    },
+    "completion": "Fertigstellung",
+    "developer": "Bauträger",
+    "units": "Einheiten",
+    "area": "Fläche",
+    "available": "Verfügbar",
+    "estimate": "Schätzung des Bauträgers",
+    "askAi": "KI zu diesem Projekt fragen",
+    "inquiry": "Anfrage senden",
+    "all": "Alle Projekte",
+    "location": "Standort"
+  },
+  "chat": {
+    "title": "KI-Assistent",
+    "aiNotice": "Ich bin ein KI-Assistent, kein Mensch. Ich informiere nur über Oman und die Projekte und gebe keine Anlage-, Steuer- oder Rechtsberatung. Renditeangaben sind Schätzungen des Bauträgers, keine Garantie.",
+    "placeholder": "Ihre Frage…",
+    "send": "Senden",
+    "human": "Ich möchte mit einem Menschen sprechen",
+    "unavailable": "Der Chat ist vorübergehend nicht verfügbar. Bitte nutzen Sie das Kontaktformular.",
+    "ai": "KI",
+    "chips": [
+      "Wie läuft ein Kauf im Oman ab?",
+      "Unterschied Muscat × Salalah",
+      "Welche Projekte gibt es?"
+    ],
+    "open": "Chat öffnen"
+  },
+  "disclaimer": "Preise und Renditen sind unverbindlich. Renditen sind lediglich Schätzungen des Bauträgers und keine Garantie. Keine Anlage-, Steuer- oder Rechtsberatung.",
+  "footer": {
+    "legal": "Anbieter"
+  },
+  "blog": {
+    "title": "Blog",
+    "read": "Weiterlesen"
+  }
+}

@@ -1,0 +1,23 @@
+/* GENEROVÁNO z brand/tokens.json – needitovat */
+:root{
+  --color-bg: #FBF8F3;
+  --color-surface: #FFFFFF;
+  --color-text: #1E2A2F;
+  --color-muted: #5E6B70;
+  --color-primary: #0F5C5C;
+  --color-primaryText: #FFFFFF;
+  --color-accent: #C8923A;
+  --color-border: #E4DDD0;
+  --font-body: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: Georgia, 'Times New Roman', serif;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 40px;
+  --space-6: 64px;
+  --shadow-card: 0 4px 20px rgba(30,42,47,.08);
+}
