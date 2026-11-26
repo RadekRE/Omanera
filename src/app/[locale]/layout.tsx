@@ -9,9 +9,11 @@ import { getProjects } from "@/lib/projects";
 import ChatWidget from "@/components/ChatWidget";
 import LangSwitch from "@/components/LangSwitch";
 import ModeSwitch from "@/components/ModeSwitch";
+import PrivacyBanner from "@/components/PrivacyBanner";
 import "../tokens.css";
 import "../globals.css";
 
+export const revalidate = 60;
 export const generateStaticParams = () => routing.locales.map((locale) => ({ locale }));
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -30,7 +32,7 @@ export default async function LocaleLayout({ children, params }: { children: Rea
   setRequestLocale(locale);
   const t = await getTranslations("nav");
   const tf = await getTranslations();
-  const projects = getProjects().map((p) => ({ slug: p.slug, title: p.i18n[locale as "cs"].title, summary: p.i18n[locale as "cs"].summary }));
+  const projects = (await getProjects()).map((p) => ({ slug: p.slug, title: p.i18n[locale as "cs"].title, summary: p.i18n[locale as "cs"].summary }));
   return (
     <html lang={locale}>
       <body>
@@ -46,9 +48,11 @@ export default async function LocaleLayout({ children, params }: { children: Rea
           <main className="container">{children}</main>
           <footer className="site"><div className="container">
             <p>{tf("disclaimer")}</p>
+            <p><Link href="/privacy">{tf("footer.privacy")}</Link></p>
             <p>{tf("footer.legal")}: {brand.legal.companyName}, {brand.legal.registration}, {brand.legal.address}, {brand.legal.email}</p>
           </div></footer>
           <ChatWidget projects={projects} />
+          <PrivacyBanner />
         </NextIntlClientProvider>
       </body>
     </html>

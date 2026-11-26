@@ -11,6 +11,7 @@ const Body = z.object({
   sessionId: z.string().min(8).max(100),
   locale: z.enum(["cs", "de", "en", "pl"]),
   projectSlug: z.string().max(100).optional(),
+  storeConsent: z.boolean().default(false),
   messages: z.array(z.object({ role: z.enum(["user", "assistant"]), content: z.string().max(chatConfig.maxInputChars) })).min(1).max(chatConfig.maxMessages)
 });
 
@@ -19,7 +20,7 @@ const json = (status: number, code: string) => Response.json({ error: code }, { 
 export async function POST(req: Request) {
   const parsed = Body.safeParse(await req.json().catch(() => null));
   if (!parsed.success) return json(400, "bad_request");
-  const { sessionId, locale, projectSlug, messages } = parsed.data;
+  const { sessionId, locale, projectSlug, messages, storeConsent } = parsed.data;
   if (messages[messages.length - 1].role !== "user") return json(400, "bad_request");
 
   const ip = req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ?? "unknown";
@@ -30,9 +31,9 @@ export async function POST(req: Request) {
   if (!apiKey) return json(503, "not_configured");
 
   const client = new Anthropic({ apiKey });
-  const system = buildSystemPrompt(locale, projectSlug);
+  const system = await buildSystemPrompt(locale, projectSlug);
   const last = messages[messages.length - 1].content;
-  void saveMessage({ sessionId, locale, projectSlug, role: "user", content: last });
+  if (storeConsent) void saveMessage({ sessionId, locale, projectSlug, role: "user", content: last });
 
   const encoder = new TextEncoder();
   const stream = new ReadableStream({
@@ -54,7 +55,7 @@ export async function POST(req: Request) {
         const final = await s.finalMessage();
         const tin = final.usage.input_tokens, tout = final.usage.output_tokens;
         addSpend((tin * PRICE_EUR_PER_MTOK.in + tout * PRICE_EUR_PER_MTOK.out) / 1_000_000);
-        void saveMessage({ sessionId, locale, projectSlug, role: "assistant", content: full, tokensIn: tin, tokensOut: tout, model: chatConfig.model });
+        if (storeConsent) void saveMessage({ sessionId, locale, projectSlug, role: "assistant", content: full, tokensIn: tin, tokensOut: tout, model: chatConfig.model });
       } catch (e) {
         console.error("chat error", e);
         controller.enqueue(encoder.encode("\n[[error]]"));

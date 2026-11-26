@@ -6,7 +6,7 @@ type L = "cs" | "de" | "en" | "pl";
 export default async function Projects({ params, searchParams }: { params: Promise<{ locale: L }>; searchParams: Promise<{ location?: string; type?: string; sort?: string }> }) {
   const { locale } = await params; setRequestLocale(locale);
   const sp = await searchParams; const t = await getTranslations("nav"); const tp = await getTranslations("project");
-  const all = getProjects();
+  const all = await getProjects();
   let list = all.filter((p) => (!sp.location || p.location === sp.location) && (!sp.type || p.type === sp.type));
   if (sp.sort === "price") list = [...list].sort((a, b) => minPrice(a) - minPrice(b));
   const locs = [...new Set(all.map((p) => p.location))]; const types = [...new Set(all.map((p) => p.type))];

@@ -47,14 +47,61 @@
       "Muscat × Salalah",
       "Jakie macie projekty?"
     ],
-    "open": "Otwórz czat"
+    "open": "Otwórz czat",
+    "consent": "Zgadzam się na zapisanie tej rozmowy w celu ulepszania usługi i odpowiadania na zapytania (opcjonalnie).",
+    "delete": "Usuń moją rozmowę",
+    "deleted": "Rozmowa została usunięta."
   },
   "disclaimer": "Ceny i zyski mają charakter orientacyjny. Zyski to wyłącznie szacunki dewelopera, a nie gwarancja. To nie jest porada inwestycyjna, podatkowa ani prawna.",
   "footer": {
-    "legal": "Operator"
+    "legal": "Operator",
+    "privacy": "Polityka prywatności"
   },
   "blog": {
     "title": "Blog",
     "read": "Czytaj dalej"
+  },
+  "lead": {
+    "title": "Wyślij zapytanie",
+    "name": "Imię i nazwisko",
+    "email": "E-mail",
+    "phone": "Telefon (opcjonalnie)",
+    "message": "Wiadomość",
+    "linkChat": "Dołącz naszą rozmowę z asystentem AI do zapytania (jeśli została zapisana)",
+    "consent": "Wyrażam zgodę na przetwarzanie moich danych osobowych w celu obsługi zapytania.",
+    "privacyLink": "Polityka prywatności",
+    "marketing": "Chcę otrzymywać nowości (opcjonalnie, z możliwością wycofania).",
+    "send": "Wyślij",
+    "ok": "Dziękujemy, wiadomość została wysłana. Odezwiemy się.",
+    "error": "Nie udało się wysłać. Spróbuj ponownie."
+  },
+  "banner": {
+    "label": "Prywatność",
+    "text": "Ta strona nie używa plików cookie śledzących. Zapisujemy tylko ustawienia techniczne w Twojej przeglądarce.",
+    "more": "Więcej o prywatności",
+    "ok": "Rozumiem"
+  },
+  "privacy": {
+    "title": "Polityka prywatności",
+    "draft": "Wersja robocza, przed startem do weryfikacji prawnej.",
+    "controller": "Administrator",
+    "sections": [
+      {
+        "h": "Jakie dane przetwarzamy",
+        "p": "Dane z formularza zapytania (imię, e-mail, telefon, wiadomość) oraz, za Twoją zgodą, zapis rozmowy z asystentem AI."
+      },
+      {
+        "h": "Cel i okres przechowywania",
+        "p": "Zapytania obsługujemy i przechowujemy maksymalnie 24 miesiące. Zapisane rozmowy bez zapytania usuwamy po 90 dniach."
+      },
+      {
+        "h": "Podmioty przetwarzające",
+        "p": "Hosting (Vercel), baza danych (Supabase, UE), model AI (Anthropic), e-mail (Resend)."
+      },
+      {
+        "h": "Twoje prawa",
+        "p": "Możesz żądać dostępu, sprostowania, usunięcia lub przeniesienia danych oraz wycofać zgodę. Zapisaną rozmowę usuniesz przyciskiem w czacie, pozostałe prawa wykonasz e-mailem."
+      }
+    ]
   }
 }

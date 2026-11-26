@@ -47,14 +47,61 @@
       "Rozdíl Muscat × Salalah",
       "Jaké máte projekty?"
     ],
-    "open": "Otevřít chat"
+    "open": "Otevřít chat",
+    "consent": "Souhlasím s uložením této konverzace za účelem zlepšení služby a odpovědí na poptávky (nepovinné).",
+    "delete": "Smazat moji konverzaci",
+    "deleted": "Konverzace byla smazána."
   },
   "disclaimer": "Ceny a výnosy jsou orientační. Výnosy jsou pouze odhad developera, nejsou zárukou. Nejde o investiční, daňové ani právní poradenství.",
   "footer": {
-    "legal": "Provozovatel"
+    "legal": "Provozovatel",
+    "privacy": "Zásady ochrany osobních údajů"
   },
   "blog": {
     "title": "Blog",
     "read": "Číst dál"
+  },
+  "lead": {
+    "title": "Poslat poptávku",
+    "name": "Jméno",
+    "email": "E-mail",
+    "phone": "Telefon (nepovinné)",
+    "message": "Zpráva",
+    "linkChat": "Připojit k poptávce náš rozhovor s AI asistentem (pokud jste ho uložili)",
+    "consent": "Souhlasím se zpracováním osobních údajů za účelem vyřízení poptávky.",
+    "privacyLink": "Zásady ochrany osobních údajů",
+    "marketing": "Souhlasím se zasíláním novinek (nepovinné, lze odvolat).",
+    "send": "Odeslat",
+    "ok": "Děkujeme, zpráva byla odeslána. Ozveme se vám.",
+    "error": "Odeslání se nepodařilo. Zkuste to prosím znovu."
+  },
+  "banner": {
+    "label": "Soukromí",
+    "text": "Web nepoužívá sledovací cookies. Ukládáme jen technické nastavení ve vašem prohlížeči.",
+    "more": "Více o soukromí",
+    "ok": "Rozumím"
+  },
+  "privacy": {
+    "title": "Zásady ochrany osobních údajů",
+    "draft": "Pracovní verze, před spuštěním ji schválí právník.",
+    "controller": "Správce",
+    "sections": [
+      {
+        "h": "Jaké údaje zpracováváme",
+        "p": "Údaje z poptávkového formuláře (jméno, e-mail, telefon, zpráva) a, pokud s tím souhlasíte, přepis konverzace s AI asistentem."
+      },
+      {
+        "h": "Účel a doba uložení",
+        "p": "Poptávky vyřizujeme a uchováváme nejdéle 24 měsíců. Uložené konverzace bez poptávky mažeme po 90 dnech."
+      },
+      {
+        "h": "Zpracovatelé",
+        "p": "Hosting (Vercel), databáze (Supabase, EU), AI model (Anthropic), e-mail (Resend)."
+      },
+      {
+        "h": "Vaše práva",
+        "p": "Můžete žádat o přístup, opravu, výmaz či přenesení údajů a odvolat souhlas. Uloženou konverzaci smažete tlačítkem v chatu, ostatní práva uplatníte e-mailem."
+      }
+    ]
   }
 }

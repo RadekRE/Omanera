@@ -11,6 +11,6 @@ export default async function Home({ params }: { params: Promise<{ locale: L }> 
       <p><Link className="btn" href="/chat">{t("cta")}</Link> <Link className="btn alt" href="/projects">{t("browse")}</Link></p></section>
     <h2>{t("reasons")}</h2>
     <ul><li>{t("r1")}</li><li>{t("r2")}</li><li>{t("r3")}</li></ul>
-    <div className="grid">{await Promise.all(getProjects().map((p) => <ProjectCard key={p.slug} p={p} locale={locale} />))}</div>
+    <div className="grid">{await Promise.all((await getProjects()).map((p) => <ProjectCard key={p.slug} p={p} locale={locale} />))}</div>
   </>);
 }

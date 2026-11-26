@@ -47,14 +47,61 @@
       "Unterschied Muscat × Salalah",
       "Welche Projekte gibt es?"
     ],
-    "open": "Chat öffnen"
+    "open": "Chat öffnen",
+    "consent": "Ich willige in die Speicherung dieses Gesprächs zur Verbesserung des Dienstes und zur Beantwortung von Anfragen ein (optional).",
+    "delete": "Mein Gespräch löschen",
+    "deleted": "Das Gespräch wurde gelöscht."
   },
   "disclaimer": "Preise und Renditen sind unverbindlich. Renditen sind lediglich Schätzungen des Bauträgers und keine Garantie. Keine Anlage-, Steuer- oder Rechtsberatung.",
   "footer": {
-    "legal": "Anbieter"
+    "legal": "Anbieter",
+    "privacy": "Datenschutzerklärung"
   },
   "blog": {
     "title": "Blog",
     "read": "Weiterlesen"
+  },
+  "lead": {
+    "title": "Anfrage senden",
+    "name": "Name",
+    "email": "E-Mail",
+    "phone": "Telefon (optional)",
+    "message": "Nachricht",
+    "linkChat": "Unser Gespräch mit dem KI-Assistenten der Anfrage beifügen (sofern gespeichert)",
+    "consent": "Ich willige in die Verarbeitung meiner personenbezogenen Daten zur Bearbeitung der Anfrage ein.",
+    "privacyLink": "Datenschutzerklärung",
+    "marketing": "Ich möchte Neuigkeiten erhalten (optional, widerrufbar).",
+    "send": "Senden",
+    "ok": "Vielen Dank, Ihre Nachricht wurde gesendet. Wir melden uns.",
+    "error": "Senden fehlgeschlagen. Bitte versuchen Sie es erneut."
+  },
+  "banner": {
+    "label": "Datenschutz",
+    "text": "Diese Website verwendet keine Tracking-Cookies. Wir speichern nur technische Einstellungen in Ihrem Browser.",
+    "more": "Mehr zum Datenschutz",
+    "ok": "Verstanden"
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "draft": "Arbeitsfassung, vor dem Start rechtlich zu prüfen.",
+    "controller": "Verantwortlicher",
+    "sections": [
+      {
+        "h": "Welche Daten wir verarbeiten",
+        "p": "Daten aus dem Anfrageformular (Name, E-Mail, Telefon, Nachricht) und, mit Ihrer Einwilligung, das Protokoll des Gesprächs mit dem KI-Assistenten."
+      },
+      {
+        "h": "Zweck und Speicherdauer",
+        "p": "Anfragen bearbeiten wir und speichern sie höchstens 24 Monate. Gespeicherte Gespräche ohne Anfrage löschen wir nach 90 Tagen."
+      },
+      {
+        "h": "Auftragsverarbeiter",
+        "p": "Hosting (Vercel), Datenbank (Supabase, EU), KI-Modell (Anthropic), E-Mail (Resend)."
+      },
+      {
+        "h": "Ihre Rechte",
+        "p": "Sie können Auskunft, Berichtigung, Löschung oder Übertragung verlangen und Einwilligungen widerrufen. Ein gespeichertes Gespräch löschen Sie per Schaltfläche im Chat, weitere Rechte per E-Mail."
+      }
+    ]
   }
 }
