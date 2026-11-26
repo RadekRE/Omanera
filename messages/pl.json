@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "projects": "Projekty",
+    "blog": "Blog",
+    "locations": "Lokalizacje",
+    "about": "O nas",
+    "chat": "Czat"
+  },
+  "home": {
+    "title": "Nieruchomości w Omanie, w prosty sposób",
+    "lead": "Informacje o Omanie i wybranych projektach. Zapytaj asystenta AI lub przeglądaj ofertę.",
+    "reasons": "Dlaczego Oman",
+    "r1": "Stabilny kraj z długoterminową wizją (Vision 2040)",
+    "r2": "Projekty z możliwością pobytu rezydenckiego",
+    "r3": "Bezpośrednie loty z Europy",
+    "cta": "Zapytaj asystenta AI",
+    "browse": "Zobacz projekty"
+  },
+  "project": {
+    "from": "od",
+    "stage": {
+      "planned": "Planowany",
+      "under_construction": "W budowie",
+      "completed": "Ukończony"
+    },
+    "completion": "Ukończenie",
+    "developer": "Deweloper",
+    "units": "Jednostki",
+    "area": "Powierzchnia",
+    "available": "Dostępne",
+    "estimate": "Szacunek dewelopera",
+    "askAi": "Zapytaj AI o ten projekt",
+    "inquiry": "Wyślij zapytanie",
+    "all": "Wszystkie projekty",
+    "location": "Lokalizacja"
+  },
+  "chat": {
+    "title": "Asystent AI",
+    "aiNotice": "Jestem asystentem AI, nie człowiekiem. Podaję tylko informacje o Omanie i projektach i nie udzielam porad inwestycyjnych, podatkowych ani prawnych. Podane zyski to szacunki dewelopera, nie gwarancja.",
+    "placeholder": "Wpisz pytanie…",
+    "send": "Wyślij",
+    "human": "Chcę porozmawiać z człowiekiem",
+    "unavailable": "Czat jest chwilowo niedostępny. Skorzystaj z formularza kontaktowego.",
+    "ai": "AI",
+    "chips": [
+      "Jak wygląda zakup w Omanie?",
+      "Muscat × Salalah",
+      "Jakie macie projekty?"
+    ],
+    "open": "Otwórz czat"
+  },
+  "disclaimer": "Ceny i zyski mają charakter orientacyjny. Zyski to wyłącznie szacunki dewelopera, a nie gwarancja. To nie jest porada inwestycyjna, podatkowa ani prawna.",
+  "footer": {
+    "legal": "Operator"
+  },
+  "blog": {
+    "title": "Blog",
+    "read": "Czytaj dalej"
+  }
+}
