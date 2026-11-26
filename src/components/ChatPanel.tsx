@@ -13,10 +13,11 @@ function useStored<T>(key: string, init: T) {
   return [v, setV] as const;
 }
 
-export default function ChatPanel({ locale, projects, projectSlug }: { locale: string; projects: ChatProject[]; projectSlug?: string }) {
+export default function ChatPanel({ locale, projects, projectSlug, initialQuestion }: { locale: string; projects: ChatProject[]; projectSlug?: string; initialQuestion?: string }) {
   const t = useTranslations("chat");
   const [msgs, setMsgs] = useStored<Msg[]>("chat.msgs", []);
   const [sid] = useStored<string>("chat.sid", typeof crypto !== "undefined" ? crypto.randomUUID() : "session-" + Math.random().toString(36).slice(2));
+  const [consent, setConsent] = useStored<boolean>("chat.consent", false);
   const [input, setInput] = useState("");
   const [busy, setBusy] = useState(false);
   const log = useRef<HTMLDivElement>(null);
@@ -28,7 +29,7 @@ export default function ChatPanel({ locale, projects, projectSlug }: { locale: s
     setMsgs([...next, { role: "assistant", content: "" }]); setInput(""); setBusy(true);
     try {
       const res = await fetch("/api/chat", { method: "POST", headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ sessionId: sid, locale, projectSlug, messages: next }) });
+        body: JSON.stringify({ sessionId: sid, locale, projectSlug, storeConsent: consent, messages: next }) });
       if (!res.ok || !res.body) throw new Error(String(res.status));
       const reader = res.body.getReader(); const dec = new TextDecoder(); let acc = "";
       for (;;) {
@@ -40,13 +41,22 @@ export default function ChatPanel({ locale, projects, projectSlug }: { locale: s
     setBusy(false);
   }
 
+  const started = useRef(false);
+  useEffect(() => { if (initialQuestion && !started.current) { started.current = true; const id = setTimeout(() => send(initialQuestion), 120); return () => clearTimeout(id); } // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  async function wipe() {
+    await fetch("/api/chat/delete", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ sessionId: sid }) }).catch(() => null);
+    setMsgs([{ role: "assistant", content: t("deleted") }]);
+  }
+
   function render(content: string) {
     const parts = content.replace("[[error]]", t("unavailable")).split(/(\[\[project:[a-z0-9-]+\]\]|\[\[human\]\])/g);
     return parts.map((p, i) => {
       const m = p.match(/^\[\[project:([a-z0-9-]+)\]\]$/);
       if (m) { const pr = projects.find((x) => x.slug === m[1]); return pr ? (
         <div key={i} className="card" style={{ margin: "8px 0" }}><strong>{pr.title}</strong><div className="muted">{pr.summary}</div>
-          <Link href={`/projects/${pr.slug}`}>→ {pr.title}</Link></div>) : null; }
+          <Link href={`/projects/${pr.slug}`}>{pr.title}</Link></div>) : null; }
       if (p === "[[human]]") return <div key={i}><Link className="btn alt" href="/about">{t("human")}</Link></div>;
       return <span key={i}>{p}</span>;
     });
@@ -56,10 +66,15 @@ export default function ChatPanel({ locale, projects, projectSlug }: { locale: s
     <div className="chat">
       <div className="notice"><span className="tag">{t("ai")}</span>{t("aiNotice")}</div>
       <div className="log" ref={log} aria-live="polite">
+        {msgs.length === 0 && <div className="msg assistant"><span className="tag">{t("ai")}</span>{t("welcome")}</div>}
         {msgs.map((m, i) => (<div key={i} className={`msg ${m.role}`}>{m.role === "assistant" && <span className="tag">{t("ai")}</span>}{render(m.content)}</div>))}
       </div>
       {msgs.length === 0 && (<div className="chips">{(t.raw("chips") as string[]).map((c) => <button key={c} onClick={() => send(c)}>{c}</button>)}
         <button onClick={() => send(t("human"))}>{t("human")}</button></div>)}
+      <div className="notice" style={{ borderTop: "1px solid var(--color-border)", borderBottom: 0 }}>
+        <label><input type="checkbox" checked={consent} onChange={(e) => setConsent(e.target.checked)} /> {t("consent")}</label>
+        {msgs.length > 0 && <> · <button type="button" className="linkbtn" onClick={wipe}>{t("delete")}</button></>}
+      </div>
       <form onSubmit={(e) => { e.preventDefault(); send(input); }}>
         <input value={input} onChange={(e) => setInput(e.target.value)} placeholder={t("placeholder")} maxLength={2000} aria-label={t("placeholder")} />
         <button className="btn" disabled={busy}>{t("send")}</button>
