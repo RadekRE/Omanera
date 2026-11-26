@@ -13,6 +13,6 @@ export default function ChatWidget({ projects }: { projects: ChatProject[] }) {
   const slug = path.match(/^\/projects\/([a-z0-9-]+)/)?.[1];
   return (<>
     {open && <div className="widget"><ChatPanel locale={locale} projects={projects} projectSlug={slug} /></div>}
-    <button className="btn fab" onClick={() => setOpen(!open)} aria-expanded={open}>{open ? "×" : `💬 ${t("open")}`}</button>
+    <button className="btn fab" onClick={() => setOpen(!open)} aria-expanded={open}>{open ? t("close") : t("open")}</button>
   </>);
 }

@@ -7,14 +7,49 @@
     "chat": "Chat"
   },
   "home": {
-    "title": "Nemovitosti v Ománu, srozumitelně",
-    "lead": "Informace o Ománu a vybraných projektech. Zeptejte se AI asistenta nebo si projděte nabídku.",
-    "reasons": "Proč Omán",
-    "r1": "Stabilní země s dlouhodobou vizí (Vision 2040)",
-    "r2": "Projekty s možností pobytového víza",
-    "r3": "Přímé lety z Evropy",
+    "eyebrow": "Nemovitosti v Ománu pro evropské kupce",
+    "title": "Byt v Ománu. S čísly, bez slibů.",
+    "lead": "Ceny, lokality, postup koupě. U každého čísla uvádíme, odkud je, a odhady nazýváme odhady.",
     "cta": "Zeptat se AI asistenta",
-    "browse": "Prohlédnout projekty"
+    "browse": "Projekty a ceny",
+    "qTitle": "Tři otázky, které si klade každý",
+    "q1": {
+      "h": "Kolik stojí byt v Ománu?",
+      "p": "Cena se liší podle lokality, fáze výstavby a dispozice. U každého projektu uvádíme cenu od a datum, ke kterému platí.",
+      "l": "Projekty s cenami"
+    },
+    "q2": {
+      "h": "Na co si dát pozor u off-plan?",
+      "p": "Koupě před dokončením má svá specifika: platební plán, termín předání, postavení developera. Projdeme je věcně.",
+      "l": "Číst na blogu"
+    },
+    "q3": {
+      "h": "Hrubý výnos není to, co dostanete na účet.",
+      "p": "Odhad hrubého výnosu nezahrnuje poplatky za správu, období bez nájemce ani daně. Proto je výnos u nás vždy odhad developera, se zdrojem a datem.",
+      "l": "Zeptat se AI"
+    },
+    "howTitle": "Jak to funguje",
+    "s1": {
+      "h": "Zeptejte se",
+      "p": "AI asistent odpoví na obecné otázky o Ománu a projektech. Je to AI, ne poradce, a řekne to hned na začátku."
+    },
+    "s2": {
+      "h": "Projděte projekty",
+      "p": "Cena od, fáze výstavby, jednotky a odhad developera na jednom místě."
+    },
+    "s3": {
+      "h": "Promluvte si s člověkem",
+      "p": "Pošlete poptávku. Ozve se vám člověk, ne automat."
+    },
+    "honestTitle": "Jak mluvíme o číslech",
+    "honestP": "Prodáváme nemovitost, ne investici. Proto platí tři pravidla.",
+    "honest": [
+      "Každé číslo má zdroj nebo štítek „odhad“.",
+      "Výnos nikdy neslibujeme ani nezaručujeme.",
+      "O daních, právu a financování rozhoduje váš nezávislý poradce."
+    ],
+    "featured": "Vybrané projekty",
+    "all": "Všechny projekty"
   },
   "project": {
     "from": "od",
@@ -32,7 +67,8 @@
     "askAi": "Zeptat se AI na tento projekt",
     "inquiry": "Poslat poptávku",
     "all": "Všechny projekty",
-    "location": "Lokalita"
+    "location": "Lokalita",
+    "sortPrice": "Řadit podle ceny"
   },
   "chat": {
     "title": "AI asistent",
@@ -50,7 +86,8 @@
     "open": "Otevřít chat",
     "consent": "Souhlasím s uložením této konverzace za účelem zlepšení služby a odpovědí na poptávky (nepovinné).",
     "delete": "Smazat moji konverzaci",
-    "deleted": "Konverzace byla smazána."
+    "deleted": "Konverzace byla smazána.",
+    "close": "Zavřít"
   },
   "disclaimer": "Ceny a výnosy jsou orientační. Výnosy jsou pouze odhad developera, nejsou zárukou. Nejde o investiční, daňové ani právní poradenství.",
   "footer": {

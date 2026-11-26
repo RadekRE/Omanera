@@ -7,9 +7,10 @@ import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import { getProjects } from "@/lib/projects";
 import ChatWidget from "@/components/ChatWidget";
-import LangSwitch from "@/components/LangSwitch";
-import ModeSwitch from "@/components/ModeSwitch";
+import SiteNav from "@/components/SiteNav";
 import PrivacyBanner from "@/components/PrivacyBanner";
+import "@fontsource-variable/fraunces";
+import "@fontsource-variable/inter";
 import "../tokens.css";
 import "../globals.css";
 
@@ -30,7 +31,6 @@ export default async function LocaleLayout({ children, params }: { children: Rea
   const { locale } = await params;
   if (!routing.locales.includes(locale as never)) notFound();
   setRequestLocale(locale);
-  const t = await getTranslations("nav");
   const tf = await getTranslations();
   const projects = (await getProjects()).map((p) => ({ slug: p.slug, title: p.i18n[locale as "cs"].title, summary: p.i18n[locale as "cs"].summary }));
   return (
@@ -39,14 +39,10 @@ export default async function LocaleLayout({ children, params }: { children: Rea
         <NextIntlClientProvider>
           <header className="site"><div className="container">
             <Link href="/" className="logo">{brand.name}</Link>
-            <nav className="main">
-              <Link href="/projects">{t("projects")}</Link><Link href="/locations">{t("locations")}</Link>
-              <Link href="/blog">{t("blog")}</Link><Link href="/about">{t("about")}</Link>
-              <ModeSwitch /><LangSwitch />
-            </nav>
+            <SiteNav />
           </div></header>
           <main className="container">{children}</main>
-          <footer className="site"><div className="container">
+          <footer className="site"><div className="container"><p className="logo">{brand.name}</p>
             <p>{tf("disclaimer")}</p>
             <p><Link href="/privacy">{tf("footer.privacy")}</Link></p>
             <p>{tf("footer.legal")}: {brand.legal.companyName}, {brand.legal.registration}, {brand.legal.address}, {brand.legal.email}</p>

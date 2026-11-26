@@ -7,14 +7,49 @@
     "chat": "Czat"
   },
   "home": {
-    "title": "Nieruchomości w Omanie, w prosty sposób",
-    "lead": "Informacje o Omanie i wybranych projektach. Zapytaj asystenta AI lub przeglądaj ofertę.",
-    "reasons": "Dlaczego Oman",
-    "r1": "Stabilny kraj z długoterminową wizją (Vision 2040)",
-    "r2": "Projekty z możliwością pobytu rezydenckiego",
-    "r3": "Bezpośrednie loty z Europy",
+    "eyebrow": "Nieruchomości w Omanie dla europejskich kupujących",
+    "title": "Mieszkanie w Omanie. Z liczbami, bez obietnic.",
+    "lead": "Ceny, lokalizacje, przebieg zakupu. Przy każdej liczbie podajemy źródło, a szacunki nazywamy szacunkami.",
     "cta": "Zapytaj asystenta AI",
-    "browse": "Zobacz projekty"
+    "browse": "Projekty i ceny",
+    "qTitle": "Trzy pytania, które zadaje każdy",
+    "q1": {
+      "h": "Ile kosztuje mieszkanie w Omanie?",
+      "p": "Cena zależy od lokalizacji, etapu budowy i układu. Przy każdym projekcie podajemy cenę od oraz datę, której dotyczy.",
+      "l": "Projekty z cenami"
+    },
+    "q2": {
+      "h": "Na co uważać przy off-plan?",
+      "p": "Zakup przed ukończeniem ma swoją specyfikę: harmonogram płatności, termin przekazania, pozycja dewelopera. Omawiamy je rzeczowo.",
+      "l": "Czytaj na blogu"
+    },
+    "q3": {
+      "h": "Zysk brutto to nie to, co trafia na konto.",
+      "p": "Szacunek zysku brutto nie obejmuje opłat za zarządzanie, okresów bez najemcy ani podatków. Dlatego zysk jest u nas zawsze szacunkiem dewelopera, ze źródłem i datą.",
+      "l": "Zapytaj AI"
+    },
+    "howTitle": "Jak to działa",
+    "s1": {
+      "h": "Zapytaj",
+      "p": "Asystent AI odpowiada na ogólne pytania o Oman i projekty. To AI, nie doradca, i mówi o tym na początku."
+    },
+    "s2": {
+      "h": "Przejrzyj projekty",
+      "p": "Cena od, etap budowy, jednostki i szacunek dewelopera w jednym miejscu."
+    },
+    "s3": {
+      "h": "Porozmawiaj z człowiekiem",
+      "p": "Wyślij zapytanie. Odezwie się człowiek, nie automat."
+    },
+    "honestTitle": "Jak mówimy o liczbach",
+    "honestP": "Sprzedajemy nieruchomość, nie inwestycję. Dlatego obowiązują trzy zasady.",
+    "honest": [
+      "Każda liczba ma źródło lub etykietę „szacunek“.",
+      "Nigdy nie obiecujemy ani nie gwarantujemy zysku.",
+      "O podatkach, prawie i finansowaniu decyduje Twój niezależny doradca."
+    ],
+    "featured": "Wybrane projekty",
+    "all": "Wszystkie projekty"
   },
   "project": {
     "from": "od",
@@ -32,7 +67,8 @@
     "askAi": "Zapytaj AI o ten projekt",
     "inquiry": "Wyślij zapytanie",
     "all": "Wszystkie projekty",
-    "location": "Lokalizacja"
+    "location": "Lokalizacja",
+    "sortPrice": "Sortuj wg ceny"
   },
   "chat": {
     "title": "Asystent AI",
@@ -50,7 +86,8 @@
     "open": "Otwórz czat",
     "consent": "Zgadzam się na zapisanie tej rozmowy w celu ulepszania usługi i odpowiadania na zapytania (opcjonalnie).",
     "delete": "Usuń moją rozmowę",
-    "deleted": "Rozmowa została usunięta."
+    "deleted": "Rozmowa została usunięta.",
+    "close": "Zamknij"
   },
   "disclaimer": "Ceny i zyski mają charakter orientacyjny. Zyski to wyłącznie szacunki dewelopera, a nie gwarancja. To nie jest porada inwestycyjna, podatkowa ani prawna.",
   "footer": {

@@ -7,14 +7,49 @@
     "chat": "Chat"
   },
   "home": {
-    "title": "Immobilien im Oman, verständlich",
-    "lead": "Informationen zum Oman und zu ausgewählten Projekten. Fragen Sie den KI-Assistenten oder stöbern Sie im Angebot.",
-    "reasons": "Warum Oman",
-    "r1": "Stabiles Land mit langfristiger Vision (Vision 2040)",
-    "r2": "Projekte mit möglicher Aufenthaltserlaubnis",
-    "r3": "Direktflüge aus Europa",
+    "eyebrow": "Immobilien im Oman für europäische Käufer",
+    "title": "Wohnung im Oman. Mit Zahlen, ohne Versprechen.",
+    "lead": "Preise, Standorte, Ablauf des Kaufs. Bei jeder Zahl nennen wir die Quelle, und Schätzungen nennen wir Schätzungen.",
     "cta": "KI-Assistenten fragen",
-    "browse": "Projekte ansehen"
+    "browse": "Projekte und Preise",
+    "qTitle": "Drei Fragen, die sich jeder stellt",
+    "q1": {
+      "h": "Was kostet eine Wohnung im Oman?",
+      "p": "Der Preis hängt von Standort, Bauphase und Grundriss ab. Bei jedem Projekt nennen wir den Preis ab und das Datum, zu dem er gilt.",
+      "l": "Projekte mit Preisen"
+    },
+    "q2": {
+      "h": "Worauf bei Off-Plan achten?",
+      "p": "Ein Kauf vor Fertigstellung hat Besonderheiten: Zahlungsplan, Übergabetermin, Stellung des Bauträgers. Wir gehen sie sachlich durch.",
+      "l": "Im Blog lesen"
+    },
+    "q3": {
+      "h": "Die Bruttorendite ist nicht das, was auf Ihrem Konto ankommt.",
+      "p": "Eine Schätzung der Bruttorendite enthält weder Verwaltungsgebühren noch Leerstand noch Steuern. Deshalb ist die Rendite bei uns immer eine Schätzung des Bauträgers, mit Quelle und Datum.",
+      "l": "KI fragen"
+    },
+    "howTitle": "So funktioniert es",
+    "s1": {
+      "h": "Fragen Sie",
+      "p": "Der KI-Assistent beantwortet allgemeine Fragen zum Oman und zu den Projekten. Er ist eine KI, kein Berater, und sagt das gleich zu Beginn."
+    },
+    "s2": {
+      "h": "Projekte ansehen",
+      "p": "Preis ab, Bauphase, Einheiten und Schätzung des Bauträgers an einem Ort."
+    },
+    "s3": {
+      "h": "Mit einem Menschen sprechen",
+      "p": "Senden Sie eine Anfrage. Es meldet sich ein Mensch, kein Automat."
+    },
+    "honestTitle": "Wie wir über Zahlen sprechen",
+    "honestP": "Wir verkaufen eine Immobilie, keine Geldanlage. Deshalb gelten drei Regeln.",
+    "honest": [
+      "Jede Zahl hat eine Quelle oder das Etikett „Schätzung“.",
+      "Rendite versprechen oder garantieren wir nie.",
+      "Über Steuern, Recht und Finanzierung entscheidet Ihr unabhängiger Berater."
+    ],
+    "featured": "Ausgewählte Projekte",
+    "all": "Alle Projekte"
   },
   "project": {
     "from": "ab",
@@ -32,7 +67,8 @@
     "askAi": "KI zu diesem Projekt fragen",
     "inquiry": "Anfrage senden",
     "all": "Alle Projekte",
-    "location": "Standort"
+    "location": "Standort",
+    "sortPrice": "Nach Preis"
   },
   "chat": {
     "title": "KI-Assistent",
@@ -50,7 +86,8 @@
     "open": "Chat öffnen",
     "consent": "Ich willige in die Speicherung dieses Gesprächs zur Verbesserung des Dienstes und zur Beantwortung von Anfragen ein (optional).",
     "delete": "Mein Gespräch löschen",
-    "deleted": "Das Gespräch wurde gelöscht."
+    "deleted": "Das Gespräch wurde gelöscht.",
+    "close": "Schließen"
   },
   "disclaimer": "Preise und Renditen sind unverbindlich. Renditen sind lediglich Schätzungen des Bauträgers und keine Garantie. Keine Anlage-, Steuer- oder Rechtsberatung.",
   "footer": {

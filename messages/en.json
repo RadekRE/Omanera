@@ -7,14 +7,49 @@
     "chat": "Chat"
   },
   "home": {
-    "title": "Oman property, made clear",
-    "lead": "Information about Oman and selected projects. Ask the AI assistant or browse the listings.",
-    "reasons": "Why Oman",
-    "r1": "A stable country with a long-term vision (Vision 2040)",
-    "r2": "Projects that may qualify for residency",
-    "r3": "Direct flights from Europe",
+    "eyebrow": "Oman property for European buyers",
+    "title": "An apartment in Oman. With numbers, without promises.",
+    "lead": "Prices, locations, how buying works. We say where each number comes from, and we call estimates estimates.",
     "cta": "Ask the AI assistant",
-    "browse": "Browse projects"
+    "browse": "Projects and prices",
+    "qTitle": "Three questions everyone asks",
+    "q1": {
+      "h": "How much does an apartment in Oman cost?",
+      "p": "Price depends on location, construction stage and layout. For each project we show a from-price and the date it applies to.",
+      "l": "Projects with prices"
+    },
+    "q2": {
+      "h": "What to watch for with off-plan?",
+      "p": "Buying before completion has its own specifics: payment plan, handover date, the developer's standing. We go through them plainly.",
+      "l": "Read on the blog"
+    },
+    "q3": {
+      "h": "Gross yield is not what lands in your account.",
+      "p": "A gross yield estimate leaves out management fees, vacant periods and taxes. That is why a yield here is always a developer estimate, with a source and a date.",
+      "l": "Ask the AI"
+    },
+    "howTitle": "How it works",
+    "s1": {
+      "h": "Ask",
+      "p": "The AI assistant answers general questions about Oman and the projects. It is an AI, not an adviser, and says so up front."
+    },
+    "s2": {
+      "h": "Browse projects",
+      "p": "From-price, construction stage, units and the developer's estimate in one place."
+    },
+    "s3": {
+      "h": "Talk to a person",
+      "p": "Send an enquiry. A person gets back to you, not a machine."
+    },
+    "honestTitle": "How we talk about numbers",
+    "honestP": "We sell property, not investments. So three rules apply.",
+    "honest": [
+      "Every number has a source or an “estimate” label.",
+      "We never promise or guarantee a return.",
+      "Tax, legal and financing decisions belong to your independent adviser."
+    ],
+    "featured": "Selected projects",
+    "all": "All projects"
   },
   "project": {
     "from": "from",
@@ -32,7 +67,8 @@
     "askAi": "Ask the AI about this project",
     "inquiry": "Send an enquiry",
     "all": "All projects",
-    "location": "Location"
+    "location": "Location",
+    "sortPrice": "Sort by price"
   },
   "chat": {
     "title": "AI assistant",
@@ -50,7 +86,8 @@
     "open": "Open chat",
     "consent": "I agree to this conversation being stored to improve the service and answer enquiries (optional).",
     "delete": "Delete my conversation",
-    "deleted": "The conversation has been deleted."
+    "deleted": "The conversation has been deleted.",
+    "close": "Close"
   },
   "disclaimer": "Prices and yields are indicative. Yields are developer estimates only and not a guarantee. This is not investment, tax or legal advice.",
   "footer": {

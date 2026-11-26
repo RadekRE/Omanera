@@ -22,7 +22,7 @@ export default async function Leads() {
   return (<><h1>Leady</h1><p><Link className="btn alt" href="/admin/leads/export">Export CSV</Link></p>
     {(data ?? []).map((l) => (<div className="card" key={l.id} style={{ marginBottom: 12 }}>
       <strong>{l.name}</strong> · <a href={`mailto:${l.email}`}>{l.email}</a> {l.phone && `· ${l.phone}`}
-      <p className="muted">{new Date(l.created_at).toLocaleString("cs")} · {l.locale} · {l.project_slug ?? "bez projektu"} · zdroj {l.source}{l.notified_at ? "" : " · ⚠ e-mail Radkovi se nepodařilo odeslat"}{l.consent_marketing ? " · marketingový souhlas" : ""}</p>
+      <p className="muted">{new Date(l.created_at).toLocaleString("cs")} · {l.locale} · {l.project_slug ?? "bez projektu"} · zdroj {l.source}{l.notified_at ? "" : " · POZOR: e-mail Radkovi se nepodařilo odeslat"}{l.consent_marketing ? " · marketingový souhlas" : ""}</p>
       {l.message && <p style={{ whiteSpace: "pre-wrap" }}>{l.message}</p>}
       {l.conversation_id && <p><Link href={`/admin/conversations/${l.conversation_id}`}>Rozhovor</Link></p>}
       <form action={update} style={{ display: "flex", gap: 8, flexWrap: "wrap" }}><input type="hidden" name="id" value={l.id} />

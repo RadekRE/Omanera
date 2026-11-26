@@ -15,7 +15,7 @@ export default async function Detail({ params }: { params: Promise<{ id: string 
   const { data: c } = await db.from("conversations").select("*").eq("id", id).maybeSingle(); if (!c) notFound();
   const { data: msgs } = await db.from("messages").select("*").eq("conversation_id", id).order("created_at");
   const { data: leads } = await db.from("leads").select("id,name,email").eq("conversation_id", id);
-  return (<><p><Link href="/admin/conversations">← Rozhovory</Link></p>
+  return (<><p><Link href="/admin/conversations">Rozhovory</Link></p>
     <h1>Rozhovor</h1><p className="muted">{c.locale} · {c.project_slug ?? "bez projektu"} · {new Date(c.started_at).toLocaleString("cs")}</p>
     {(leads ?? []).map((l) => <p key={l.id} className="card">Lead: {l.name} ({l.email}) – <Link href="/admin/leads">leady</Link></p>)}
     <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>{(msgs ?? []).map((m) => (

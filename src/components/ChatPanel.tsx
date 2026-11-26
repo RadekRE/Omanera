@@ -52,7 +52,7 @@ export default function ChatPanel({ locale, projects, projectSlug }: { locale: s
       const m = p.match(/^\[\[project:([a-z0-9-]+)\]\]$/);
       if (m) { const pr = projects.find((x) => x.slug === m[1]); return pr ? (
         <div key={i} className="card" style={{ margin: "8px 0" }}><strong>{pr.title}</strong><div className="muted">{pr.summary}</div>
-          <Link href={`/projects/${pr.slug}`}>→ {pr.title}</Link></div>) : null; }
+          <Link href={`/projects/${pr.slug}`}>{pr.title}</Link></div>) : null; }
       if (p === "[[human]]") return <div key={i}><Link className="btn alt" href="/about">{t("human")}</Link></div>;
       return <span key={i}>{p}</span>;
     });
